@@ -1,0 +1,58 @@
+/* Form elements */
+.container {
+    background-color: rgb(244, 217, 208);
+    /* background-image: linear-gradient(rgb(199, 91, 122,0.5), rgb(217, 171, 171,0.5)),
+                  url("../assets/images/logo2.png"); */
+    background-size: cover; /* Makes sure the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-width:100%;
+    min-height: 100vh; /* Centers the content vertically */
+}
+
+.login-container {
+    background-color: #C75B7A;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px; /* Ensures responsiveness */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.label {
+    color:#ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.line-break {
+    margin: 15px 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.btn-submit {
+    background-color: rgb(146, 26, 64);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

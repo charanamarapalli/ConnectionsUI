@@ -1,0 +1,138 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Ensures font-family consistency */
+    font-size: 16px; /* Sets base font size for all text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: rgb(244, 217, 208);
+}
+
+
+
+/* Login container styling */
+.container {
+    padding:3em 0;
+    background-color: rgb(244, 217, 208);
+    background-image: linear-gradient(rgb(199, 91, 122,0.5), rgb(217, 171, 171,0.5)),
+                  url("../images/logo2.png");
+    background-size: cover; /* Makes sure the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-width:100%;
+    min-height: 100vh; /* Centers the content vertically */
+}
+
+.login-container {
+    background-color: #C75B7A;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px; /* Ensures responsiveness */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+
+
+
+
+/*zero-sreen elements*/
+.card {
+    background-color: #C75B7A;
+    padding: 20px;
+    width: 80%;
+    /*max-width: 400px; /* Ensures responsiveness */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin:0.5rem; /* Softer shadow */
+}
+
+.know-more{
+    display:flex;
+    justify-content: space-between;
+}
+
+.description{
+    width:70%;
+}
+.about-picture{
+
+    width: 30%;
+    max-width: 200px; 
+    height: auto;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    padding:0.5rem;
+    
+}
+.picture{
+    width: auto; /* Let the width adjust automatically */
+    max-width: 100%; /* Scale to fit the container */
+    max-height: 100%; /* Scale to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5%;
+    object-fit: contain; /* Make sure it fits within the container */
+}
+
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 15px;
+    }
+    .body{
+        background-color: rgb(244, 217, 208);
+    }
+
+    .btn-submit {
+        padding: 8px;
+    }
+
+
+    .description{
+        width:100%;
+    }
+    .about-picture {
+        width: 100%;
+
+    }
+    .picture {
+        height: 7rem;
+    }
+    .know-more{
+        flex-direction:column;
+        justify-content: center;
+    }
+}
+
+
+
+/*proposed your loved one*/
+.where_you_met{
+
+}
+.how_you_felt{
+
+}
+.dedicate_song{
+    
+}
+.images{
+    
+}
+.accept{
+
+}
