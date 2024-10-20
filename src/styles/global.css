@@ -7,21 +7,12 @@ body {
     box-sizing: border-box;
 }
 
-.screen{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    background-color: rgb(244, 217, 208);
-}
-
-
-
 /* Login container styling */
 .container {
     padding:3em 0;
     background-color: rgb(244, 217, 208);
     background-image: linear-gradient(rgb(199, 91, 122,0.5), rgb(217, 171, 171,0.5)),
-                  url("../images/logo2.png");
+                  url("../assets/images/logo2.png");
     background-size: cover; /* Makes sure the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
@@ -42,10 +33,6 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
-
-
-
-
 /*zero-sreen elements*/
 .card {
     background-color: #C75B7A;
@@ -57,35 +44,7 @@ body {
     margin:0.5rem; /* Softer shadow */
 }
 
-.know-more{
-    display:flex;
-    justify-content: space-between;
-}
 
-.description{
-    width:70%;
-}
-.about-picture{
-
-    width: 30%;
-    max-width: 200px; 
-    height: auto;
-    padding-right: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    padding:0.5rem;
-    
-}
-.picture{
-    width: auto; /* Let the width adjust automatically */
-    max-width: 100%; /* Scale to fit the container */
-    max-height: 100%; /* Scale to fit the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5%;
-    object-fit: contain; /* Make sure it fits within the container */
-}
 
 
 /* Media Queries */

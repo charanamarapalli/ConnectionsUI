@@ -1,18 +1,4 @@
 /* Form elements */
-.container {
-    background-color: rgb(244, 217, 208);
-    /* background-image: linear-gradient(rgb(199, 91, 122,0.5), rgb(217, 171, 171,0.5)),
-                  url("../assets/images/logo2.png"); */
-    background-size: cover; /* Makes sure the image covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    min-width:100%;
-    min-height: 100vh; /* Centers the content vertically */
-}
 
 .login-container {
     background-color: #C75B7A;

@@ -1,5 +1,7 @@
 import "./App.css";
 import Routes from "./routes/MyRoutes";
+import './styles/global.css'
+
 
 function App() {
   return (

@@ -1,11 +1,41 @@
 import React from "react";
 import './Loginform.css';
+import {login} from '../../service/loginService';
+import {useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 export default function Loginform() {
+  const [userEmail, setUserEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const handleEmailChange=(event)=>{
+    setUserEmail(event.target.value);
+  }
+
+  const handlePasswordChange=(event)=>{
+    setPassword(event.target.value);
+  }
+
+  const handleSubmit =async (event)=>{
+    event.preventDefault();
+    try{
+      const response = await login({userEmail, password});
+      const jwtToken = response;
+      localStorage.setItem("jwtToken", jwtToken);
+      navigate("/dashboard");
+    }
+    catch(error){
+      console.log(error);
+    }
+  }
+
+
   return (
     <>
-      <div class="container">
-      <div class="login-container">
-      <form className="form-login" onclick="submit">
+      <div className="container">
+
+      <div className="login-container">
+      <form className="form-login" onSubmit={handleSubmit}>
         <div className="items label heading">Login Here</div>
         <hr className="line-break"></hr>
         <div className="items">
@@ -13,9 +43,11 @@ export default function Loginform() {
             Enter User Email:
           </label>
           <input
+            onChange={handleEmailChange}
             className="input-field"
             id="userEmail"
             type="text"
+            value={userEmail}
             placeholder="Enter Email"
           />
         </div>
@@ -24,10 +56,12 @@ export default function Loginform() {
           <label className="label" htmlFor="Password">
             Enter Password:
           </label>
-          <input
+          <input 
+            onChange={handlePasswordChange}
             className="input-field"
             id="Password"
             type="password"
+            value={password}
             placeholder="Enter Password"
           />
         </div>
