@@ -4,7 +4,7 @@ import {login} from '../../service/loginService';
 import {useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Loginform() {
+export default function LoginForm() {
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -21,7 +21,9 @@ export default function Loginform() {
     try{
       const response = await login({userEmail, password});
       const jwtToken = response;
+      console.log("jwt response: "+jwtToken);
       localStorage.setItem("jwtToken", jwtToken);
+      console.log(  "from network : "+ localStorage.getItem("jwtToken", jwtToken));
       navigate("/dashboard");
     }
     catch(error){
@@ -32,8 +34,7 @@ export default function Loginform() {
 
   return (
     <>
-      <div className="container">
-
+    <div className="my-container">
       <div className="login-container">
       <form className="form-login" onSubmit={handleSubmit}>
         <div className="items label heading">Login Here</div>

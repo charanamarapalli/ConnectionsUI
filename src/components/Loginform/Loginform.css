@@ -1,12 +1,16 @@
 /* Form elements */
 
 .login-container {
-    background-color: #C75B7A;
+    /* background-color: #C75B7A; */
     padding: 20px;
     width: 80%;
     max-width: 400px; /* Ensures responsiveness */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin:20vh 0;
 }
 
 .label {
@@ -30,15 +34,4 @@
     border: none;
     height: 1px;
     background-color: #ddd;
-}
-
-.btn-submit {
-    background-color: rgb(146, 26, 64);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }

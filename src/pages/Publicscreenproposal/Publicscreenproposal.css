@@ -1,0 +1,12 @@
+body{
+
+        background: rgb(2, 0, 36);
+        background: url('your-image-url.png') repeat,
+            linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+                rgba(218, 24, 125, 1) 82%, #4694a4 100%);
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+}

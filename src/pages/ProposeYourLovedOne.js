@@ -1,13 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
-import CreateWebPage from './CreateWebPage/CreateWebPage'
+import Editor from '../components/Editor/Editor'
+import Sidenavbar from '../components/Sidenavbar/Sidenavbar'
+
 export default function ProposeYourLovedOne() {
   return (
-    <div>
-      <Navbar/>
-      <CreateWebPage/>
-      <Footer/>
-    </div>
+    <>
+        <Sidenavbar/>
+        <Editor title ="Hi Sai, Add your proposal"/>
+    </>
   )
 }
