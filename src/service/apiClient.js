@@ -17,7 +17,6 @@ export const setAuthToken = (token)=>{
         // Delete auth header
         delete apiClient.defaults.headers.common['Authorization'];
       }
-
 }
 
 export default apiClient;

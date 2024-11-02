@@ -2,38 +2,38 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Sidenavbar.css";
 import { Link } from "react-router-dom";
-import Linebreak from "../Linebreak/Linebreak";
 export default function Sidenavbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const menuItems = [
-    { name: `Proposal \u2192`, path: "/propose-your-loved-one/proposal" },
-    { name: `First Meet \u2192`, path: "/propose-your-loved-one/first-meet" },
+    { name: `Proposal \u2192`, path: "/create-proposal/proposal" },
+    { name: `First Meet \u2192`, path: "/create-proposal/first-meet" },
     {
       name: `Upload Images \u2192`,
-      path: "/propose-your-loved-one/upload-images",
+      path: "/create-proposal/upload-images",
     },
-    { name: `Gift \u2192`, path: "/propose-your-loved-one/gift" },
+    { name: `Gift \u2192`, path: "/create-proposal/gift" },
     {
-      name: `Accept Button \u2192`,
-      path: "/propose-your-loved-one/accept-button",
+      name: `Accept \u2192`,
+      path: "/create-proposal/accept",
     },
     {
       name: `Dedicate Song \u2192`,
-      path: "/propose-your-loved-one/dedicate-song",
+      path: "/create-proposal/dedicate-song",
     },
   ];
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
 
+  const toggleSidebar = () => {
+    setIsToggleOpen(!isToggleOpen);
+  };
+  
   return (
     <>
       {/* <button onClick={toggleSidebar} className="dropdown-button">
         Menu
       </button> */}
-      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+      <div className={`sidebar ${isToggleOpen ? "open" : ""}`}>
         <ul>
           {menuItems.map((item, index) => (
             <li
@@ -45,7 +45,6 @@ export default function Sidenavbar() {
           ))}
         </ul>
       </div>
-      <Linebreak/>
 
       {/* <div id="menuToggle" class="menu-toggle">
     <span>&#9776; Menu</span>

@@ -5,7 +5,7 @@ import "./Imageeditor.css";
 const defaultSrc =
   "https://raw.githubusercontent.com/roadmanfong/react-cropper/master/example/img/child.jpg";
   
-export default function Imagesizecorrector() {
+export default function Imageeditor() {
   const [image, setImage] = useState(defaultSrc);
   const [cropData, setCropData] = useState("#");
   const cropperRef = createRef();
@@ -37,7 +37,7 @@ export default function Imagesizecorrector() {
         <div>
           <div style={{ width: "100%" }}>
             <input type="file" onChange={onChange} />
-            <button>Use default img</button>
+            {/* <button>Use default img</button> */}
             <br />
             <br />
             <Cropper
@@ -48,8 +48,8 @@ export default function Imagesizecorrector() {
               preview=".img-preview"
               src={image}
               viewMode={1}
-              minCropBoxHeight={5}
-              minCropBoxWidth={5}
+              minCropBoxHeight={2}
+              minCropBoxWidth={2}
               background={false}
               responsive={true}
               autoCropArea={1}

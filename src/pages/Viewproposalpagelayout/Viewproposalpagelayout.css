@@ -1,0 +1,79 @@
+.proposal-container {
+    display: flex;
+    flex-direction: column;
+    min-height:82vh;
+    justify-content: center;
+    align-items: center;
+    padding:2em;
+    margin:2em;
+}
+
+.section-break {
+    border: none;
+    height: 3px;
+    width: 80%;
+    /* Line width (to leave space on both sides) */
+    margin: 20px auto;
+    /* Centered and with vertical spacing */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(122, 121, 121, 0));
+    /* Gradual fade */
+}
+
+.intro {
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+}
+
+.heading-gradient {
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(360deg, #ec0493, #f5f4f4);
+    /* Define the gradient colors */
+    -webkit-background-clip: text;
+    /* Clip the background to the text */
+    -webkit-text-fill-color: transparent;
+    /* Make the text fill transparent */
+}
+
+
+.image-size {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btnsum {
+    background-color: #020024;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.reject:hover {
+    background-color: red;
+}
+
+.accept:hover {
+    background-color: green;
+}
+
+.mg-5 {
+    margin: 5px;
+}
+
+.link-dec {
+    text-decoration: none;
+    color: white;
+    /* background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(25, 13, 253) 0%,
+            rgba(218, 24, 125, 1) 82%, #4694a4 100%) !important; */
+    align-items: submit;
+}
+
+.hide {
+    display: none;
+}

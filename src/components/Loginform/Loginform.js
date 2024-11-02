@@ -39,7 +39,7 @@ export default function LoginForm() {
       <form className="form-login" onSubmit={handleSubmit}>
         <div className="items label heading">Login Here</div>
         <hr className="line-break"></hr>
-        <div className="items">
+        <div>
           <label className="label" htmlFor="userEmail">
             Enter User Email:
           </label>
@@ -53,7 +53,7 @@ export default function LoginForm() {
           />
         </div>
 
-        <div className="items">
+        <div>
           <label className="label" htmlFor="Password">
             Enter Password:
           </label>
@@ -67,8 +67,8 @@ export default function LoginForm() {
           />
         </div>
 
-        <div className="items">
-          <button className="btn-submit" type="submit">
+        <div>
+          <button className="btn-submit btn-width-100" type="submit">
             Login
           </button>
         </div>
