@@ -2,29 +2,27 @@
 flex:1;
 }
 
-.p-white{
-    color:white;
-}
-
 /* Gradient background for the editor container */
 .ql-container {
     color: #ffffff; /* Text color */
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
-    rgba(218, 24, 125, 1) 82%, #4694a4 100%);   
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+    rgba(218, 24, 125, 1) 82%, #4694a4 100%);    */
     border: 1px solid #ffffff; /* White border around the editor */
+    border-radius:0 0 5px 5px;
   }
   
   /* Gradient background for the toolbar */
   .ql-toolbar {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
-    rgba(218, 24, 125, 1) 82%, #4694a4 100%); 
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+    rgba(218, 24, 125, 1) 82%, #4694a4 100%);  */
     border: 1px solid #ffffff;
+    border-radius:5px 5px 0 0;
   }
   
   /* Customize dropdowns and buttons if needed */
   .ql-toolbar .ql-picker-options {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
-    rgba(218, 24, 125, 1) 82%, #4694a4 100%); 
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+    rgba(218, 24, 125, 1) 82%, #4694a4 100%);  */
     border: 1px solid #ffffff;
   }
   

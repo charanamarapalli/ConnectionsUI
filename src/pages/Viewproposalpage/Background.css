@@ -1,0 +1,21 @@
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0px);
+      opacity: 0.4;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 1 ;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 0.4;
+    }
+  }
+  
+  .love-symbol {
+    position: absolute;
+    color: red; /* Customize as needed */
+    z-index: -1;
+    animation: floatAnimation 10s ease-in-out infinite;
+  }

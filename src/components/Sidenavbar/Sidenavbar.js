@@ -33,7 +33,7 @@ export default function Sidenavbar() {
       {/* <button onClick={toggleSidebar} className="dropdown-button">
         Menu
       </button> */}
-      <div className={`sidebar ${isToggleOpen ? "open" : ""}`}>
+      <div className={`sidebar bg-color ${isToggleOpen ? "open" : ""}`}>
         <ul>
           {menuItems.map((item, index) => (
             <li

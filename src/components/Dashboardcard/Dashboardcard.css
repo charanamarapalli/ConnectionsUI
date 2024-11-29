@@ -1,11 +1,11 @@
-.card {
-    background-color: #C75B7A;
+.dashboard-card {
+    /* background-color: #C75B7A; */
     padding: 20px;
     width: 80%;
     /*max-width: 400px; /* Ensures responsiveness */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin:0.5rem; /* Softer shadow */
+    margin:0.5rem; /* Softer shadow */   
 }
 
 .know-more{
@@ -15,6 +15,7 @@
 
 .description{
     width:70%;
+    text-align: center;
 }
 .about-picture{
 

@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Volkhov', sans-serif;
     /* Ensures font-family consistency */
     font-size: 16px;
     /* Sets base font size for all text */
@@ -11,20 +11,45 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    background: rgb(2, 0, 36);
+    /* background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
-            rgba(218, 24, 125, 1) 82%, #4694a4 100%);
+            rgba(218, 24, 125, 1) 82%, #4694a4 100%); */
 
-    color: white;
+    /* color: white; */
     animation-name: loveFloating;
 }
 
-@keyframes loveFloating {}
+.bg-color{
+    background-color: black;
+}
 
+.admin-container-bg-color{
+    background-color:#454545;
+}
 
+.text-white{
+    color:white;
+}
 
+p{
+    font-family: 'Parkinsans';
+}
+
+h1, a{
+    font-family: 'Volkhov';
+    color:rgb(8, 8, 8) !important;
+}
+
+a:hover{
+ color:#474646 !important;
+}
+
+.hidden{
+    visibility:hidden;
+}
 /* Login container styling */
 .my-container {
+    /* background-color:#f8f8f8; */
     /* background-color: rgb(217, 171, 171,0.5);
     background-image: linear-gradient(rgb(199, 91, 122,0.5), rgb(217, 171, 171,0.5)),
                   url("../assets/images/logo2.png"); */
@@ -80,10 +105,10 @@ body {
 
 .btn-submit {
     /* background-color: rgba(218, 24, 125, 1);  */
-    background: rgb(2, 0, 36);
+    /* background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
-            rgba(218, 24, 125, 1) 82%, #4694a4 100%);
-    color: white;
+            rgba(218, 24, 125, 1) 82%, #4694a4 100%); */
+    /* color: white; */
     text-align:center;
     padding: 10px 15px;
     border: none;

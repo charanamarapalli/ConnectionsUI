@@ -1,11 +1,13 @@
-.proposal-container {
+.view-proposal-container {
     display: flex;
     flex-direction: column;
-    min-height:82vh;
+    min-height:100vh;
     justify-content: center;
     align-items: center;
-    padding:2em;
-    margin:2em;
+    padding:1.5em;
+    /* background-color: #a8a7b9;
+    z-index: -5; */
+    /* margin:2em; */
 }
 
 .section-break {
@@ -19,18 +21,12 @@
     /* Gradual fade */
 }
 
-.intro {
-    text-align: center;
-    margin: 1em;
-    padding: 1em;
-}
-
 .heading-gradient {
     font-size: 3em;
     font-weight: bold;
     background: linear-gradient(360deg, #ec0493, #f5f4f4);
     /* Define the gradient colors */
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     /* Clip the background to the text */
     -webkit-text-fill-color: transparent;
     /* Make the text fill transparent */
@@ -65,6 +61,12 @@
     margin: 5px;
 }
 
+.volkhov-regular {
+    font-family: "Volkhov", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .link-dec {
     text-decoration: none;
     color: white;
@@ -77,3 +79,6 @@
 .hide {
     display: none;
 }
+  
+
+  

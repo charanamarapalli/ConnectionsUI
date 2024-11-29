@@ -7,3 +7,16 @@
     overflow: hidden;
   }
   
+  .cropper-container {
+    width: 80vh;
+    height: 80vh;
+    overflow: auto; /* Enable scrolling if content exceeds container */
+    border: 1px solid #ddd; /* Optional: add a border for visual clarity */
+  }
+  
+
+  .cropped-image {
+    width: 20vh;
+    height: 20vh;
+    object-fit: cover; /* Ensures the cropped image fits within the specified dimensions */
+  }

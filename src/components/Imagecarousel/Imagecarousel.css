@@ -1,0 +1,65 @@
+.carousel-inner img {
+    width: 80%; /* Set the width to fill the container */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+
+  .intro{
+    background-color: aliceblue;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    /* width:50% !important; */
+    transition: height 0.3s ease-in-out;
+  } 
+
+  .view-proposal-btn{
+    display:inline-block;
+    background: none;
+    border:none;
+    text-decoration: none;
+    cursor:pointer;
+    padding: 0 1em;
+  }
+
+  .view-proposal-btn:hover{
+    color:rgb(14, 13, 13);
+  }
+
+  .pos-top-3{
+    position: relative;
+    top:7px;
+  }
+
+  /* Change color of the previous and next arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: red;  
+  /* border-radius: 50%;  */
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width:40%;
+}
+
+/* Optional: Change the hover effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #571629; /* Lighter color on hover */
+}
+
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 300px; /* Reduce the height for smaller screens */
+    }
+
+    .intro{
+      width:80% !important;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+      width:8%;
+    }
+  }

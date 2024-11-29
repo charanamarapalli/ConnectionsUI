@@ -1,0 +1,31 @@
+.image-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    flex-direction:row;
+}
+
+.image-card{
+    /* background-color:black; */
+}
+
+.image-card img{
+    width:400px;
+    height:300px;
+    object-fit: contain;
+    margin:0px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .image-card img{
+        width:4rem;
+    }
+
+    .player-card{
+        height:430px;   
+      }
+
+}

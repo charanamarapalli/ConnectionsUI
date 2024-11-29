@@ -1,10 +1,12 @@
 import React from 'react'
 import Viewproposalbuttons from '../../components/Viewproposalbuttons/Viewproposalbuttons'
+import Audioplayer from '../../components/Audioplayer/Audioplayer'
 const Dedicateasongpage = () => {
   return (
     <>
-      <div className="proposal-container">
-        <p className="p-white">Hi from dedicate a song page</p>
+      <div className="view-proposal-container">
+        <p className="">I am dedicating this song to you..</p>
+        <Audioplayer audioSrc="/assets/music/gaajubomma.mp3"/>
         <Viewproposalbuttons prevUrl="/view-proposal/gift" nextUrl="/view-proposal/proposal"/>
       </div>
     </>

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Viewproposalbuttons from '../../components/Viewproposalbuttons/Viewproposalbuttons'
+import './Acceptpage.css'
 const Acceptpage = () => {
+
   return (
     <div>
-      <div className="proposal-container">
-        <p className="p-white">Hi from accept page</p>
+      <div className="view-proposal-container">
+        <p className="">Hi from accept page</p>
         <Viewproposalbuttons prevUrl="/view-proposal/proposal"/>
       </div>
     </div>

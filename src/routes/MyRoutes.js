@@ -16,6 +16,9 @@ import Giftpage from "../pages/Viewproposalpage/Giftpage";
 import Dedicateasongpage from "../pages/Viewproposalpage/Dedicateasongpage";
 import Homepage from "../pages/Viewproposalpage/Homepage";
 import Acceptpage from "../pages/Viewproposalpage/Acceptpage";
+import Home from "../pages/Createproposalpage/Home";
+import Singlepageproposallayout from "../pages/Singlepageproposallayout";
+import Videobyte from "../pages/Viewproposalpage/Videobyte";
 
 export default function MyRoutes() {
   return (
@@ -34,6 +37,7 @@ export default function MyRoutes() {
               <Route path="gift" element={<Gifteditor />} />
               <Route path="accept" element={<Accepteditor />} />
               <Route path="dedicate-song" element={<Accepteditor />} />
+              <Route path="home" element={<Home />} />
             </Route>
 
             <Route path="/view-proposal" element={<Viewproposalpagelayout />}>
@@ -41,10 +45,13 @@ export default function MyRoutes() {
               <Route path="proposal" element={<Proposalpage />} />
               <Route path="first-meet" element={<Firstmeetpage />} />
               <Route path="our-gallery" element={<Ourgallerypage />} />
+              <Route path="video-byte" element={<Videobyte />} />
               <Route path="gift" element={<Giftpage />} />
               <Route path="accept" element={<Acceptpage />} />
               <Route path="dedicate-song" element={<Dedicateasongpage />} />
             </Route>
+
+            <Route path="view-single-proposal" element={<Singlepageproposallayout/>}></Route>
           </Routes>
         </BrowserRouter>
       </>

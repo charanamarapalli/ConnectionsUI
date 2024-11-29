@@ -34,13 +34,13 @@ export default function LoginForm() {
 
   return (
     <>
-    <div className="my-container">
-      <div className="login-container">
+    <div className="my-container admin-container-bg-color">
+      <div className="login-container bg-color">
       <form className="form-login" onSubmit={handleSubmit}>
-        <div className="items label heading">Login Here</div>
+        <div className="items label heading text-white">Login Here</div>
         <hr className="line-break"></hr>
         <div>
-          <label className="label" htmlFor="userEmail">
+          <label className="label text-white" htmlFor="userEmail">
             Enter User Email:
           </label>
           <input
@@ -54,7 +54,7 @@ export default function LoginForm() {
         </div>
 
         <div>
-          <label className="label" htmlFor="Password">
+          <label className="label text-white" htmlFor="Password">
             Enter Password:
           </label>
           <input 
@@ -68,7 +68,7 @@ export default function LoginForm() {
         </div>
 
         <div>
-          <button className="btn-submit btn-width-100" type="submit">
+          <button className="btn-submit btn-width-100 label" type="submit">
             Login
           </button>
         </div>

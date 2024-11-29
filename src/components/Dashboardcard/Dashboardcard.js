@@ -29,11 +29,11 @@ export default function Card(props) {
 
   return (
     <>
-      <div className="card">
-            <h2>{props.title}</h2>
+      <div className="dashboard-card bg-color">
+            <h2 className="text-white">{props.title}</h2>
             <hr className="line-break"/>
             <div className="know-more">
-                <div className="description">
+                <div className="description text-white">
                     <p>{props.description}</p> 
                     <p>{"Your Current Status: "+ currentStatus}</p>      
                 </div>
@@ -41,7 +41,7 @@ export default function Card(props) {
                     <img className="picture" src={"/assets/images/IMG_5844.JPG"} alt="Broken image"/>
                  </div>
             </div>
-            <button className="btn-submit btn-width-100" onClick={handleRedirection}>Click to Start</button>
+            <button className="btn-submit btn-width-100 label" onClick={handleRedirection}>Click to Start</button>
         </div>
     </>
   )

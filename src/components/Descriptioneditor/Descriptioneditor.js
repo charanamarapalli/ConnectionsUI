@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Texteditor.css'
+import './Descriptioneditor.css'
 import ReactQuill from 'react-quill';  
 import 'react-quill/dist/quill.snow.css'; 
 export default function Texteditor() {
@@ -11,7 +11,7 @@ const handleTextChange = (value) => {
   return (
     <>
   <div>
-    <p class="p-white">Write here</p>
+    <p class="label text-white">Enter Description</p>
     <ReactQuill 
       value={text} 
       onChange={handleTextChange} 

@@ -1,5 +1,25 @@
-.mg-left-2{
+.proposal-buttons{
+    width:50%;
     margin:2em;
     padding: 0.5em 2em;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.proposal-buttons.expanded {
+    margin-top: 2em;
+  }
+
+
+
+@media (max-width: 768px) {
+    
+    .proposal-buttons{
+        width:100%;
+    }
+
 }
 

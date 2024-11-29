@@ -1,17 +1,25 @@
-import React from 'react'
-import Viewproposalbuttons from '../../components/Viewproposalbuttons/Viewproposalbuttons'
+import React from "react";
+import Viewproposalbuttons from "../../components/Viewproposalbuttons/Viewproposalbuttons";
+import Imagecarousel from "../../components/Imagecarousel/Imagecarousel";
+import Textcard from "../../components/Textcard/Textcard";
+import Background from "./Background";
 
 const Ourgallerypage = () => {
   return (
     <>
-      <div className="proposal-container">
-        <h1 className="p-white">Proposal</h1>
-        <p className="p-white">Hi, user</p>
-        <p className="p-white">from our gallery page</p>
-        <Viewproposalbuttons prevUrl="/view-proposal/first-meet" nextUrl="/view-proposal/gift"/>
+      <div className="view-proposal-container">
+        <h1 className="">
+          <Textcard description="Mana Gallery" />
+        </h1>
+        <Imagecarousel />
+        <Viewproposalbuttons
+          // className={showDescription ? "expanded" : ""}
+          prevUrl="/view-proposal/first-meet"
+          nextUrl="/view-proposal/video-byte"
+        />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Ourgallerypage
+export default Ourgallerypage;

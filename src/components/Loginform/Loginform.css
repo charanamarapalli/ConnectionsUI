@@ -11,10 +11,11 @@
     flex-direction: column;
     justify-content:center;
     margin:20vh 0;
+    /* background-color: pink; */
 }
 
 .label {
-    color:#ffffff;
+    /* color:#ffffff; */
     font-weight: bold;
     margin-bottom: 5px;
 }

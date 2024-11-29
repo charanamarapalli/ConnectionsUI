@@ -1,0 +1,36 @@
+.text-card {
+    background-color: aliceblue;
+    padding: 10px;
+    /* width: 100%; */
+    /*max-width: 400px; /* Ensures responsiveness */
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin:0.5rem; /* Softer shadow */   
+}
+
+.readmore-card{
+    position:absolute;
+    background-color: aliceblue;
+    padding-top: 3px;
+    padding-bottom:0px;
+    /* width:50% ; */
+    /* display:flex;
+    justify-content: center; */
+    /*max-width: 400px; /* Ensures responsiveness */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin:0.5rem; /* Softer shadow */  
+    margin-bottom:3rem; 
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    
+    .text-card, .readmore-card{
+        width:90%;
+    }
+
+    
+
+}
